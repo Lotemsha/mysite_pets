@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoptiion</title>
+  <link href="./Styles/styles.css" rel="stylesheet">
+  <link rel="icon" href="/Icons/paw_icon.jpg">
+  <script>
+    nagishli_config = {
+      // צבע התוסף - האפשרויות הן Blue (כחול), Red (אדום), Green (ירוק), Purple (סגול), Pink (ורוד), Yellow (צהוב), Gray (אפור), Orange (כתום), Brown (חום), Turquoise (טורקיז) ו-Black (שחור)
+      color: "pink",
+      // שפת התוסף, he - עברית, en - אנגלית
+      language: "en"
+    };
+  </script>
+  <script src="js/nagishli_beta.js" defer></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <nav class="top_nav">
+        <a href="./index.html"><img src="./Images/logo.png" title="logo" alt="logo" width="100"></a>
+        <a href="./index.html">Home</a>
+        <a href="./Pet_ownership.html"> Pet ownership</a>
+        <a href="#form_2">Contact us</a>
+        <a href="./rating.html">Rate us</a>
+        <a href="./reviews.html">Reviews</a>
+        <a href="https://en.wikipedia.org/wiki/Pet" target="_blank"> Wikipedia </a>
+        <a href="https://www.youtube.com/watch?v=BgHNbUD_Uz0" target="_blank"> <img src="./Icons/youtube_icon.png"
+            alt="Youtube" title="Youtube"></a>
+      </nav>
+      <h1>Our pets</h1>
+      <figure>
+        <img id="mainImage" src="./Images/girl_kitten.jpg" alt="girl and kitten" title="Girl and kitten">
+      </figure>
+      <p class="main">
+        Adopting a pet is like inviting boundless love and companionship into your life. Not only does it provide a
+        loving home
+        to an animal in need, but it also brings joy, purpose, and unconditional affection to your daily routine. Pets
+        can
+        improve your mental and physical health by reducing stress, encouraging exercise, and providing constant
+        companionship.
+        Plus, you'll be giving an animal a second chance at a happy life, which is incredibly rewarding. Consider
+        adoption and
+        make a furry friend’s life brighter!
+      </p>
+    </header>
+    <main>
+      <div class="all_about">
+        <figure>
+          <img class="pets" src="./Images/maltese.jpg" alt="dog_taichi" title="Taichi">
+        </figure>
+        <section class="pet_info">
+          <h3>Meet Taichi</h3>
+          <p>
+            Few words about the dog, how is he with pouple and other animals.
+            He's 8 years old and well aducating.
+            <br>
+          <p>
+            Age: 8 years old
+            <br>
+            Gender: Male
+          </p>
+        </section>
+      </div>
+      <div class="all_about">
+        <figure>
+          <img class="pets" src="./Images/blind_cat.jpg" alt="cat_mika" title="Mika">
+        </figure>
+        <section class="pet_info">
+          <h3>Meet Mika</h3>
+          <p>
+            Lovely Mika is a delicate girl, looking out into the world timidly with her one eye, hoping to find her
+            loving,
+            forever home.
+            <br>
+          <p>
+            Age: 4 years old
+            <br>
+            Gender: Female
+          </p>
+        </section>
+      </div>
+      <div class="all_about">
+        <figure>
+          <img class="pets" src="./Images/kitten.jpg" alt="cat_sora" title="Sora">
+        </figure>
+        <section class="pet_info">
+          <h3>Meet Sora</h3>
+          <p>
+            Energetic wonderfull and loving.
+            Very friendly, gets along with dogs and cats, vaccinated.
+          </p>
+          <br>
+          <p>
+            Age: 4 month old
+            <br>
+            Gender: Female
+          </p>
+        </section>
+      </div>
+      <div class="all_about">
+        <figure>
+          <img class="pets" src="./Images/kitten-2.jpg" alt="cat_souske" title="Souske">
+        </figure>
+        <section class="pet_info">
+          <h3>Meet Sosuke</h3>
+          <p>
+            This gorgeous boy is Sosuke. He’s a bit shy when he first meets somebody new, but with a little bit of
+            patience, he will
+            shower you with love and cuddles.
+            <br>
+          <p>
+            Age: 2 month old
+            <br>
+            Gender: Male
+          </p>
+        </section>
+      </div>
+
+      <div id="form">
+        <h3 class="contact_us">Contact us</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="firstName">First name</label></td>
+              <td><label for="lastName">Last name</label></td>
+              <td><label for="phonenumber">Phone number</label></td>
+              <td><label for="phonenumber">Phone number</label></td>
+            </tr>
+
+            <tr>
+              <td><input type="text" name="firstName" placeholder="Name" maxlength="10"></td>
+              <td><input type="text" name="lastName" placeholder="Last Name" maxlength="10"></td>
+              <td><input type="tel" name="phonenumber" placeholder="Number" maxlength="10"></td>
+              <td><input type="email" name="mail" placeholder="Mail" maxlength="30"></td>
+            </tr>
+            <tr>
+              <td colspan="4"><input type="submit" class="submit" value="Contact us" name="reg_btn"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="info">
+          Phone: <b>052-3895166</b>
+          Email:<span id="uniq"><a href="mailto:Lotemsha@gmail.com"><b> Lotemsha@gmail.com</b></a></span>
+        </div>
+      </div>
+
+      <div id="form_2">
+        <h3 class="contact_us">Contact us</h3>
+        <form action="/action_page.php" method="post">
+          <div>
+            <label for="firstName">First name</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="Name" maxlength="10">
+          </div>
+
+          <div>
+            <label for="lastName">Last name</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" maxlength="10">
+          </div>
+
+          <div>
+            <label for="phonenumber">Phone number</label><br>
+            <input type="tel" id="phonenumber" name="phonenumber" placeholder="Number" maxlength="10">
+          </div>
+
+          <div>
+            <label for="mail">Mail</label><br>
+            <input type="email" id="mail" name="mail" placeholder="Mail" maxlength="30">
+          </div>
+
+          <div id="button">
+            <input type="submit" class="submit" value="Contact us" name="reg_btn">
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <nav class="buttom_nav">
+        <a href="./index.html"><img src="./Images/logo.png" title="logo" alt="logo" width="100"></a>
+        <a href="./index.html">Home</a>
+        <a href="./Pet_ownership.html"> Pet ownership</a>
+        <a href="./adoption.html">Adoption</a>
+        <a href="./adoption.html#form_2">Contact us</a>
+        <a href="./rating.html">Rate us</a>
+        <a href="./reviews.html">Reviews</a>
+        <a href="https://en.wikipedia.org/wiki/Pet" target="_blank"> Wikipedia </a>
+        <a href="https://www.youtube.com/watch?v=BgHNbUD_Uz0" target="_blank"> <img src="./Icons/youtube_icon.png"
+            alt="Youtube" title="Youtube"></a>
+        <a href="https://www.instagram.com/pet/?hl=en" target="_blank"><img id="icon" src="./Icons/instegram.icon.png"
+            alt="Instegram" title="Instegram"></a>
+        <a href="./accessibility_Statement.html">Accessibility Statement</a>
+      </nav>
+      <span id="copyrights">&copy; All copyrights reserved to Lotem Sharir</span>
+    </footer>
+  </div>
+</body>
+
+</html>

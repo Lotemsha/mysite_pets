@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rating</title>
+  <link href="./Styles/styles.css" rel="stylesheet">
+  <link rel="icon" href="/Icons/paw_icon.jpg">
+  <script>
+    nagishli_config = {
+      // צבע התוסף - האפשרויות הן Blue (כחול), Red (אדום), Green (ירוק), Purple (סגול), Pink (ורוד), Yellow (צהוב), Gray (אפור), Orange (כתום), Brown (חום), Turquoise (טורקיז) ו-Black (שחור)
+      color: "pink",
+      // שפת התוסף, he - עברית, en - אנגלית
+      language: "en"
+    };
+  </script>
+  <script src="js/nagishli_beta.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <nav class="top_nav">
+        <a href="./index.html"><img src="./Images/logo.png" title="logo" alt="logo" width="100"></a>
+        <a href="./index.html">Home</a>
+        <a href="./Pet_ownership.html"> Pet ownership</a>
+        <a href="./adoption.html">Adoption</a>
+        <a href="./adoption.html#form_2">Contact us</a>
+        <a href="./reviews.html">Reviews</a>
+        <a href="https://en.wikipedia.org/wiki/Pet" target="_blank"> Wikipedia </a>
+        <a href="https://www.youtube.com/watch?v=BgHNbUD_Uz0" target="_blank"> <img src="./Icons/youtube_icon.png"
+            alt="Youtube" title="Youtube"></a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="review_form">
+        <h3>Rate us</h3>
+        <form action="/action_page.php" method="post">
+          <div class="r_form_i">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Name" maxlength="10" required>
+          </div>
+
+          <div class="r_form_i">
+            <label>Rate us</label><br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="r_form_i">
+            <label for="animal">Choose what animal do you have:</label><br>
+            <span id="radio_box">
+              <input class="animal" type="radio" checked name="animal" value="cat">Cat
+              <input class="animal" type="radio" checked name="animal" value="dog">Dog
+              <input class="animal" type="radio" name="animal" value="other">Other
+            </span>
+          </div>
+
+          <div class="r_form_i">
+            <label for="age-select" size="4">Choose your age:</label><br>
+            <select name="age-select" id="age-select" aria-checked="true">
+              <option value="1">Under 18</option>
+              <option value="2">18 - 25</option>
+              <option selected value="3">26 - 35</option>
+              <option value="4">Above 35</option>
+            </select>
+          </div>
+
+          <div class="r_form_i">
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" placeholder="Your comment goes here:"></textarea><br>
+          </div>
+
+          <div>
+            <input class="submit" type="submit" value="Submit" name="submit_button">
+            <input class="submit" id="reset" type="reset" value="Reset">
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <nav class="buttom_nav">
+        <a href="./index.html"><img src="./Images/logo.png" title="logo" alt="logo" width="100"></a>
+        <a href="./index.html">Home</a>
+        <a href="./Pet_ownership.html"> Pet ownership</a>
+        <a href="./adoption.html">Adoption</a>
+        <a href="./adoption.html#form_2">Contact us</a>
+        <a href="./reviews.html">Reviews</a>
+        <a href="https://en.wikipedia.org/wiki/Pet" target="_blank"> Wikipedia </a>
+        <a href="https://www.youtube.com/watch?v=BgHNbUD_Uz0" target="_blank"> <img src="./Icons/youtube_icon.png"
+            alt="Youtube" title="Youtube"></a>
+        <a href="https://www.instagram.com/pet/?hl=en" target="_blank"><img id="icon" src="./Icons/instegram.icon.png"
+            alt="Instegram" title="Instegram"></a>
+        <a href="./accessibility_Statement.html">Accessibility Statement</a>
+      </nav>
+      <span id="copyrights">&copy; All copyrights reserved to Lotem Sharir</span>
+    </footer>
+  </div>
+</body>
+
+</html>
